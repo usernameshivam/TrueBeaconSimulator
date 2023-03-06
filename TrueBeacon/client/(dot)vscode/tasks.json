@@ -1,0 +1,74 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "Build with GCC 12.2.0",
+			"command": "/usr/bin/g++",
+			"args": [
+				"-fdiagnostics-color=always",
+				"-g",
+				"-DBOOST_BIND_GLOBAL_PLACEHOLDERS",
+				"-lboost_system",
+				"-lboost_thread",
+				"-lboost_coroutine",
+				"-lboost_context",
+				"-lboost_serialization",
+				"-pthread",
+				"${workspaceFolder}/*.cpp",
+				"-o",
+				"${fileDirname}/output"
+			],
+			"options": {
+				"cwd": "${fileDirname}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"detail": "compiler: /usr/bin/g++"
+		}/*,
+		{
+			"type": "cppbuild",
+			"label": "Build with Clang++ 13.0.0",
+			"command": "C:\\msys64\\usr\\bin\\clang++.exe",
+			"args": [
+				"-fdiagnostics-color=always",
+				"-g",
+				"-std=c++20",
+				"${workspaceFolder}\\question1\\*.cpp",
+				"-o",
+				"${fileDirname}\\output.exe"
+			],
+			"options": {
+				"cwd": "${fileDirname}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"detail": "compiler: C:\\msys64\\usr\\bin\\clang++.exe"
+		},
+		{
+			"type": "cppbuild",
+			"label": "Build with MSVC (cl.exe ver:19.29.30137)",
+			"command": "cl.exe",
+			"args": [
+				"/Zi",
+				"/std:c++latest",
+				"/EHsc",
+				"/Fe:",
+				"${fileDirname}\\output.exe",
+				"${workspaceFolder}\\*.cpp"
+			],
+			"options": {
+				"cwd": "${fileDirname}"
+			},
+			"problemMatcher": [
+				"$msCompile"
+			],
+			"group": "build",
+			"detail": "compiler: cl.exe"
+		}*/
+	]
+}
